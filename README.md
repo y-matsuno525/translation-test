@@ -1,4 +1,7 @@
 # translation-test
+### 使用するGitHubApp(自作)
+- https://github.com/apps/bible-translation-test
+### 処理フロー
 - y-matsuno525でupstream作成
 ### 以下をブラックボックス化するアプリを作成
 - y-matsuno-uでupstreamをfork(以下y-matsuno-u)
