@@ -3,7 +3,8 @@ from django.http import JsonResponse, HttpResponseForbidden
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
 from validating_webhook import verify_signature
-from dotenv import load_dotenv
+from create_jwt import create_jwt
+from dotenv import load_dotenv #インストールしたはずなのに
 
 
 
@@ -23,3 +24,8 @@ def validate_webhook(request):
         return HttpResponseForbidden(str(e))
     
     return render(request, "test_api/validate_webhook.html")
+
+def create_jwt(request):
+    jwt = create_jwt()
+    return render(request, "test_api/create_jwt.html")
+
