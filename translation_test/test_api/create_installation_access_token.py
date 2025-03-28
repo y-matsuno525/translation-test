@@ -18,5 +18,4 @@ def create_installation_access_token(jwt):
     #POSTリクエストを送信
     response = requests.post(url, headers=headers)
 
-    #結果を表示
     return response.json()
